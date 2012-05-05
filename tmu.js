@@ -1,7 +1,6 @@
 var app = require('express').createServer();
 
 app.get('/', function(req, res){
-  console.log(req.headers['user-agent']);
   res.send('hello world');
 });
 

@@ -38,8 +38,11 @@ var suite = vows.describe('Express Routing')
 .addBatch({
   'Path should return correct code for GET': {
     topic: function() { apiTest.get('/', {}, this.callback) },
-    '/ should return 200': assertStatus(200)
-  }
-});
+    '/ should return 200': assertStatus(200),
+  },
+  '/requirement-type should return 200': assertStatus(200),
+})
+
+;
 
 suite.export(module)

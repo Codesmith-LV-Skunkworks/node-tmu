@@ -2,7 +2,8 @@ var request = require('request'),
     vows = require('vows'),
     assert = require('assert'),
     apiUrl = 'http://localhost:4000',
-    cookie = null;
+    cookie = null,
+    svr = require('../tmu');
 
 // See http://fabianosoriani.wordpress.com/2011/08/31/testing-a-node-js-express-api-server-with-vows-functional/ for helper functions
 var apiTest = {

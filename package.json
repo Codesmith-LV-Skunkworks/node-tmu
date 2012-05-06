@@ -1,0 +1,30 @@
+{
+  "name" : "node-tmu",
+  "version" : "0.0.1",
+  "author" : "Codesmith Skunkworks <skunkworks@codesmith.ws>",
+  "description" : "A NodeJS based Test Management Utility",
+  "contributors" : [
+    {
+      "name" : "Scott Scoble",
+      "email" : "sscoble@codesmith.ws"
+    }
+  ],
+  "scripts" : {
+    "start" : "node tmu.js",
+    "test" : "vows src-test/* --spec --isolate"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/Codesmith-LV-Skunkworks/node-tmu.git"
+  },
+  "dependencies" : {
+    "express" : "2.5.x"
+  },
+  "devDependencies" : {
+    "vows" : "0.6.x"
+  },
+  "license" : "MIT",
+  "engine" : {
+    "node" : "0.6.x"
+  }
+}

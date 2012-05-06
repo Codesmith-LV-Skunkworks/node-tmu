@@ -12,5 +12,4 @@ logs
 results
 
 src-cov
-node_modules
 npm-debug.log

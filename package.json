@@ -10,7 +10,7 @@
     }
   ],
   "scripts" : {
-    "start" : "node tmu.js",
+    "start" : "node src/tmu.js",
     "pretest" : "rm -fr src-cov && node-jscoverage src src-cov",
     "test" : "expresso -I src-cov src-test/*js -c"
   },

@@ -1,7 +1,7 @@
 var request = require('request'),
     vows = require('vows'),
     assert = require('assert'),
-    apiUrl = 'http://localhost:4000',
+    apiUrl = 'http://localhost:'+(process.env.PORT || 4000),
     cookie = null,
     svr = require('../tmu');
 
@@ -11,7 +11,7 @@ var apiTest = {
     request(
       {
         method: method,
-        url: apiUrl+(url||''),
+        url: apiUrl+(url || ''),
         json: data || {},
         headers: { Cookie: cookie }
       },
@@ -40,7 +40,6 @@ var suite = vows.describe('Express Routing')
     topic: function() { apiTest.get('/', {}, this.callback) },
     '/ should return 200': assertStatus(200),
   },
-  '/requirement-type should return 200': assertStatus(200),
 })
 
 ;

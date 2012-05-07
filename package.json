@@ -12,7 +12,7 @@
   "scripts" : {
     "start" : "node src/tmu.js",
     "pretest" : "rm -fr src-cov && node-jscoverage src src-cov",
-    "test" : "expresso -I src-cov src-test/*js -c"
+    "test" : "expresso -I src-cov src-test/*js -c -b"
   },
   "repository" : {
     "type" : "git",

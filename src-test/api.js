@@ -14,7 +14,8 @@ module.exports = {
     },
     {
       status: 200
-    }
+    },
+    "Expected status not found"
     );
   }
 }

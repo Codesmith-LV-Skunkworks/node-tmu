@@ -22,3 +22,5 @@ For NodeJS dependencies, just run ```npm install```.
 ## Contacting Us
 
 Send @LVCSkunkworkds a message on twitter or create an issue to get a hold of us!
+
+Follow @LVCSkunkworks, @lvcodesmith, and @punkdgeek to get the latest on ```node-tmu```.

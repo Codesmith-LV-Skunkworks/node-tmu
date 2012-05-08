@@ -18,3 +18,7 @@ For NodeJS dependencies, just run ```npm install```.
 ## Running the tmu server
 
 ```npm start``` will start up the server.
+
+## Contacting Us
+
+Send @LVCSkunkworkds a message on twitter or create an issue to get a hold of us!

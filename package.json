@@ -21,7 +21,7 @@
   },
   "dependencies" : {
     "express" : "2.5.x",
-    "forever" : "*"
+    "forever" : "0.9.x"
   },
   "devDependencies" : {
     "expresso" : "0.9.x"

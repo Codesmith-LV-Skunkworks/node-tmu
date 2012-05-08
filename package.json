@@ -10,16 +10,18 @@
     }
   ],
   "scripts" : {
-    "start" : "node src/tmu.js",
+    "start" : "forever start src/tmu.js",
     "pretest" : "rm -fr src-cov && node-jscoverage src src-cov",
-    "test" : "expresso -I src-cov src-test/*js -c -b"
+    "test" : "expresso -I src-cov src-test/*js -c -b",
+    "stop" : "forever stop 0"
   },
   "repository" : {
     "type" : "git",
     "url" : "git://github.com/Codesmith-LV-Skunkworks/node-tmu.git"
   },
   "dependencies" : {
-    "express" : "2.5.x"
+    "express" : "2.5.x",
+    "forever" : "*"
   },
   "devDependencies" : {
     "expresso" : "0.9.x"

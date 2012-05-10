@@ -1,3 +1,3 @@
-package { 'redis-server':
+package { 'mongodb-server':
   ensure => installed,
 }

@@ -10,7 +10,7 @@
     }
   ],
   "scripts" : {
-    "start" : "forever start src/tmu.js",
+    "start" : "forever start src/tmu.js -l tmu.log",
     "pretest" : "rm -fr src-cov && node-jscoverage src src-cov",
     "test" : "expresso -I src-cov src-test/*js -c -b",
     "stop" : "forever stop 0"
@@ -24,7 +24,9 @@
     "forever" : "0.9.x",
     "jade" : "0.26.x",
     "coffee-script" : "1.3.x",
-    "less" : "1.3.x"
+    "less" : "1.3.x",
+    "connect-mongodb" : "1.x.x",
+    "mongodb" : "*"
   },
   "devDependencies" : {
     "expresso" : "0.9.x"

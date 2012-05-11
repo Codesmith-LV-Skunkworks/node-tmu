@@ -10,7 +10,8 @@ lib-cov
 pids
 logs
 results
-
+.redcar
 node_modules
 src-cov
 npm-debug.log
+manifest.yml
